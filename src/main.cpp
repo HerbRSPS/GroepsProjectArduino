@@ -5,14 +5,8 @@ void setup() {
   //Test for the test branche
   //test voor de test branche, laatste keer
   //testtesttest
-<<<<<<< HEAD
- 
-=======
-  //test
->>>>>>> Test
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-   //TESTDOORSANDER
 }
