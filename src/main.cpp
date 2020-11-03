@@ -5,7 +5,11 @@ void setup() {
   //Test for the test branche
   //test voor de test branche, laatste keer
   //testtesttest
+<<<<<<< HEAD
  
+=======
+  //test
+>>>>>>> Test
 }
 
 void loop() {
