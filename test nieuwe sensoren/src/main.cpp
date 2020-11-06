@@ -17,7 +17,5 @@ void loop() {
   Serial.print(PercentageWet);    //het percentage en de value zullen langzaam hoger worden, het duurd even voordat de sensor het aanpast
   Serial.println("%");
   delay(1000);
-
-
-
+  
 }
