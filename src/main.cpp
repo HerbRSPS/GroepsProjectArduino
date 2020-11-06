@@ -1,10 +1,10 @@
 #include <Arduino.h>
 #include <DHT.h>
 #define DHTPIN 12
-#define DHTTYPE DHT11
+#define DHTTYPE DHT11             //wat voor sensor je gebruikt, de hum/temp meter is DHT11
 DHT dht(DHTPIN, DHTTYPE);
 int RGBpin[] = {9, 10, 11};
-int LDRpin = A0;
+int LDRpin = A0;                  //pin van de humidity en temperature meter
 int LDRValue = 0;
 
 void RGB_color(int red_light_value, int green_light_value, int blue_light_value)
@@ -71,8 +71,8 @@ void loop() {
     Serial.print("°C ~ ");
     Serial.println("");
   }
-  for(int i=0; i<5; i++){
-    LDRValue = analogRead(LDRpin);
+  for(int i=0; i<5; i++){                 //pas het light rustig aan
+    LDRValue = analogRead(LDRpin);        //hogere value is meer light
     Serial.print("LDR Value is: ");
     Serial.println(LDRValue);
     LuxLight(LDRValue);
